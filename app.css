@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.nav-container {
+  display: flex;
+  gap: 500px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  color: rgb(171, 171, 171);
+  font-family: "Montserrat", sans-serif;
+}
+
+.info {
+  display: flex;
+  gap: 40px;
+}
+
+.account ul {
+  color: black;
+  display: flex;
+  gap: 20px;
+}
+
+.headphones {
+  border: 1px solid rgb(220, 220, 220);
+  background-color: rgb(220, 220, 220);
+  border-radius: 10px;
+  padding: 155.542px 0px 68.04px 87.49px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.headphones-text {
+  position: relative;
+  line-height: 1.2;
+}
+
+.headphones h6 {
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.headphones h4 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.headphones h1 {
+  font-size: 150px;
+  color: rgb(248, 248, 248);
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  background-color: rgb(244, 44, 55);
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid rgb(244, 44, 55);
+}
+
+.headphone-image img {
+  width: 1100px;
+}
+
+.headphone-image {
+  position: absolute;
+  top: 0px;
+  left: 120px;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  text-align-last: end;
+  padding-right: 100px;
+}
+
+.description-head {
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.description-text {
+  color: rgb(128, 128, 128);
+}
+
+.earphones {
+  background-color: rgb(34, 34, 34);
+  border: 1px solid rgb(34, 34, 34);
+  border-radius: 20px;
+}
+
+.gadget1 {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  gap: 20px;
+}
+
+.earphones {
+  color: white;
+  line-height: 1.5;
+  padding: 40px;
+  position: relative;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.earphones p {
+  font-size: 10px;
+}
+
+.earphones h4 {
+  font-size: 20px;
+}
+
+.earphones h5 {
+  color: rgb(68, 68, 68);
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.earphones button {
+  padding: 10px 30px;
+  width: 100px;
+}
+
+.earphone-image {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+}
+
+.earphone-image img {
+  width: 250px;
+}
+
+.yellow {
+  background-color: rgb(254, 198, 46);
+  border: 1px solid rgb(254, 198, 46);
+}
+
+.yellow h5 {
+  color: rgb(255, 215, 106);
+}
+
+.yellow button {
+  background-color: white;
+  color: rgb(254, 198, 46);
+}
+
+@media all and (max-width: 1000px) {
+}
+
+@media all and (max-width: 500px) {
+  .headphones h4 {
+    display: none;
+  }
+
+  .headphone-image img {
+    width: 500px;
+  }
+
+  .description {
+    display: none;
+  }
+}
