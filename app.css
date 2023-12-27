@@ -35,18 +35,19 @@ nav ul {
 .headphones {
   border: 1px solid rgb(220, 220, 220);
   background-color: rgb(220, 220, 220);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 155.542px 0px 68.04px 87.49px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .headphones-text {
   position: relative;
   line-height: 1.2;
 }
 
 .headphones h6 {
-  font-weight: lighter;
+  font-weight: 500;
   font-size: 30px;
 }
 
@@ -58,7 +59,7 @@ nav ul {
 .headphones h1 {
   font-size: 150px;
   color: rgb(248, 248, 248);
-  font-weight: bolder;
+  font-weight: 900;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -100,6 +101,7 @@ button {
   background-color: rgb(34, 34, 34);
   border: 1px solid rgb(34, 34, 34);
   border-radius: 20px;
+  flex: 1;
 }
 
 .gadget1 {
@@ -121,18 +123,19 @@ button {
 }
 
 .earphones p {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .earphones h4 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .earphones h5 {
   color: rgb(68, 68, 68);
-  font-size: 32px;
+  font-size: 35px;
   text-transform: uppercase;
   font-weight: bolder;
+  margin-bottom: 10px;
 }
 
 .earphones button {
@@ -143,33 +146,103 @@ button {
 .earphone-image {
   position: absolute;
   bottom: -10px;
-  left: 0px;
+  left: 20px;
 }
 
 .earphone-image img {
-  width: 250px;
+  width: 300px;
 }
 
 .yellow {
   background-color: rgb(254, 198, 46);
   border: 1px solid rgb(254, 198, 46);
+  flex: 1;
 }
 
 .yellow h5 {
   color: rgb(255, 215, 106);
+  font-size: 39px;
 }
 
 .yellow button {
   background-color: white;
   color: rgb(254, 198, 46);
+  border: 1px solid white;
 }
 
-@media all and (max-width: 1000px) {
+.watch {
+  position: absolute;
+  top: -10px;
+  left: 70px;
 }
 
-@media all and (max-width: 500px) {
-  .headphones h4 {
+.watch img {
+  width: 300px;
+}
+
+.red {
+  background-color: rgb(244, 44, 55);
+  border: 1px solid rgb(244, 44, 55);
+  flex: 3;
+}
+
+.red h5 {
+  color: rgb(246, 86, 95);
+  font-size: 50px;
+}
+
+.red button {
+  background-color: white;
+  border: 1px solid white;
+  color: rgb(244, 44, 55);
+}
+
+.laptop {
+  position: absolute;
+  left: 120px;
+  top: -25px;
+}
+
+.laptop img {
+  width: 530px;
+}
+
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 600px) {
+  .nav-container {
+    display: flex;
+    gap: 250px;
+  }
+
+  ul.info li:not(.info-logo) {
     display: none;
+  }
+
+  .headphones {
+    position: relative;
+    padding: 155px 0px 50px 50px;
+  }
+
+  .headphones-text h6 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .headphones-text h4 {
+    font-size: 31px;
+  }
+
+  .headphones-text h1 {
+    font-size: 66px;
+    margin-bottom: 30px;
+  }
+
+  .headphone-image {
+    position: absolute;
+    top: 120px;
+    left: 70px;
   }
 
   .headphone-image img {
@@ -178,5 +251,48 @@ button {
 
   .description {
     display: none;
+  }
+
+  .gadget1 {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .earphones {
+    padding: 100px 100px 70px 60px;
+    position: relative;
+  }
+
+  .earphones h4 {
+    font-size: 30px;
+  }
+
+  .earphones h5,
+  .yellow h5,
+  .red h5 {
+    font-size: 45px;
+    font-weight: 900;
+  }
+
+  .earphone-image {
+    position: absolute;
+    bottom: 5px;
+    left: 200px;
+  }
+
+  .earphone-image img {
+    width: 370px;
+  }
+
+  .watch {
+    position: absolute;
+    top: -65px;
+    left: 150px;
+  }
+
+  .watch img {
+    width: 450px;
   }
 }
