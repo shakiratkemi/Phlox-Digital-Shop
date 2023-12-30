@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  padding: 20px;
+  padding: 40px;
 }
 
 .nav-container {
@@ -334,13 +334,13 @@ button {
   border-radius: 20px;
   color: rgb(222, 218, 218);
   margin: 200px 0px 200px 0px;
-
   padding: 130px 250px;
   display: flex;
   gap: 200px;
   height: 450px;
   flex: 1;
   position: relative;
+  font-family: "Montserrat", sans-serif;
 }
 
 .off {
@@ -385,7 +385,8 @@ button {
   width: 1000px;
 }
 
-.best-products-header {
+.best-products-header,
+.news-header {
   font-size: 45px;
   color: black;
   display: flex;
@@ -396,7 +397,8 @@ button {
   margin-bottom: 70px;
 }
 
-.best-products-header p {
+.best-products-header p,
+.news p {
   color: rgb(142, 143, 143);
   font-weight: lighter;
   font-size: 16px;
@@ -449,6 +451,68 @@ button {
 .products:hover {
   color: red;
   cursor: pointer;
+}
+
+.happy {
+  background-color: rgb(45, 208, 111);
+  border: 1px solid rgb(45, 208, 111);
+  display: flex;
+  gap: 250px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.happy h1 {
+  font-size: 80px;
+}
+
+.happy h3 {
+  font-size: 25px;
+}
+
+.happy button {
+  color: rgb(45, 208, 111);
+  border: 1px solid white;
+}
+
+.happy img {
+  width: 600px;
+  position: absolute;
+  left: 100px;
+  bottom: -30px;
+}
+
+.news-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.news-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-details p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.news-details .fa-circle {
+  font-size: 2px;
+}
+
+.news-details h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+.news-details img {
+  width: 300px;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -589,5 +653,48 @@ button {
 
   .free p {
     margin-top: 10px;
+  }
+
+  .summer-sale {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
+  .summer-sale h1 {
+    font-size: 45px;
+  }
+
+  .summer-sale img {
+    width: 300px;
+  }
+
+  .summer-sale h3 {
+    font-size: 30px;
+  }
+
+  .off {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .best-products-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-details img {
+    width: 500px;
+  }
+
+  .news-images {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
   }
 }
