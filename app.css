@@ -759,6 +759,8 @@ select {
 .about-container button:hover {
   background-color: black;
   cursor: pointer;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
 .about-container img {
@@ -767,6 +769,60 @@ select {
 
 .blog-news .news-details {
   margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#email,
+#number,
+#message {
+  background-color: rgb(226, 226, 226);
+  color: rgb(142, 143, 143);
+  border: 1px solid rgb(226, 226, 226);
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  outline: none;
+}
+
+.contact-us button {
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.contact-details-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.contact-details {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  color: black;
+  font-weight: bold;
+}
+
+.contact-text span,
+.contact-text p {
+  color: rgb(142, 143, 143);
+  font-weight: lighter;
+}
+
+.contact-details .fa-regular,
+.contact-details .fa-solid {
+  color: rgb(244, 44, 55);
+  font-size: 29px;
 }
 
 @media screen and (max-width: 600px) {
@@ -963,6 +1019,27 @@ select {
   .about-container {
     display: flex;
     flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .contact-details-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px;
+    gap: 60px;
+  }
+
+  .contact-details {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-us .about-container {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 }
