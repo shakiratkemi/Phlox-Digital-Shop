@@ -6,12 +6,13 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  padding: 40px;
+  overflow-x: hidden;
 }
 
 .nav-container {
   display: flex;
   gap: 400px;
+  padding: 40px 0px 20px 40px;
 }
 
 nav ul {
@@ -30,19 +31,26 @@ nav ul {
   color: rgb(171, 171, 171);
 }
 
+.info li a[href="./app.html"] {
+  color: black;
+}
+
 .account ul {
   color: black;
   display: flex;
   gap: 20px;
 }
 
+.headphones-container {
+  padding-left: 40px;
+}
+
 .headphones {
   border: 1px solid rgb(220, 220, 220);
   background-color: rgb(220, 220, 220);
   border-radius: 20px;
-  padding: 155.542px 0px 68.04px 87.49px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 155.542px 40px 68.04px 87.49px;
+  margin-bottom: 25px;
 }
 
 .headphones-text {
@@ -76,12 +84,9 @@ button {
 }
 
 .headphone-image img {
-  width: 1100px;
-}
-
-.headphone-image {
+  width: 1000px;
   position: absolute;
-  top: 0px;
+  top: 100px;
   left: 120px;
 }
 
@@ -114,6 +119,7 @@ button {
   font-family: "Montserrat", sans-serif;
   gap: 20px;
   margin-bottom: 20px;
+  padding-left: 40px;
 }
 
 .earphones {
@@ -297,6 +303,7 @@ button {
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+  padding: 40px;
 }
 
 .free {
@@ -328,7 +335,7 @@ button {
   background-color: rgb(244, 44, 55);
   border-radius: 20px;
   color: rgb(222, 218, 218);
-  margin: 200px 0px 200px 0px;
+  margin: 200px 0px 200px 40px;
   padding: 130px 250px;
   display: flex;
   gap: 200px;
@@ -458,6 +465,7 @@ button {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-left: 40px;
 }
 
 .happy h1 {
@@ -478,6 +486,10 @@ button {
   position: absolute;
   left: 100px;
   bottom: -30px;
+}
+
+.news {
+  padding: 40px;
 }
 
 .news-images {
@@ -534,6 +546,7 @@ button {
   display: flex;
   gap: 100px;
   font-size: 16px;
+  padding: 40px;
 }
 
 .access ul {
@@ -589,9 +602,123 @@ button {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1000px) {
+.shop-header {
+  background-color: rgb(226, 226, 226);
+  color: rgb(142, 143, 143);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 50px 0px;
+  margin-bottom: 20px;
 }
 
+.shop-home {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.shop-header a {
+  color: rgb(142, 143, 143);
+  text-decoration: none;
+}
+
+.shop-header a:hover {
+  text-decoration: underline;
+  color: rgb(27, 176, 206);
+}
+
+.shop-header span {
+  margin: 0px 10px 0px 10px;
+}
+
+.shop-header h2 {
+  color: black;
+  font-size: 35px;
+}
+
+.shop-categories {
+  padding: 10px 0px 0px 40px;
+  display: flex;
+  gap: 50px;
+}
+
+.search-container {
+  display: flex;
+  border: 1px solid rgb(226, 226, 226);
+  padding: 7px;
+  border-radius: 50px;
+  color: rgb(142, 143, 143);
+  background-color: rgb(226, 226, 226);
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.search-container .fa-magnifying-glass {
+  color: white;
+  background-color: rgb(244, 44, 55);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-products,
+.shop-prices {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 10px 10px 10px 0px;
+  font-size: 11px;
+}
+
+.shop-products-results {
+  display: flex;
+  gap: 350px;
+}
+
+select {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.shop-products-view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* .shop-products-view .products img {
+  border: 1px solid rgb(239, 239, 239);
+  background-color: rgb(239, 239, 239);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+} */
+
+.shop-products-view .best-products-images {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
 @media screen and (max-width: 600px) {
   .nav-container {
     display: flex;
