@@ -41,6 +41,14 @@ nav ul {
   gap: 20px;
 }
 
+.account #toggler {
+  display: none;
+}
+
+.account .fa-bars-staggered {
+  display: none;
+}
+
 .headphones-container {
   padding-left: 40px;
 }
@@ -59,23 +67,20 @@ nav ul {
 }
 
 .headphones h6 {
-  font-weight: 900;
   font-size: 30px;
 }
 
 .headphones h4 {
   font-size: 60px;
-  font-weight: bolder;
 }
 
 .headphones h1 {
   font-size: 150px;
   color: rgb(248, 248, 248);
-  font-weight: 900;
   font-family: "Montserrat", sans-serif;
 }
 
-button {
+.headphones button {
   background-color: rgb(244, 44, 55);
   color: white;
   padding: 10px;
@@ -83,11 +88,21 @@ button {
   border: 1px solid rgb(244, 44, 55);
 }
 
+.headphones button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
 .headphone-image img {
   width: 1000px;
   position: absolute;
   top: 100px;
-  left: 120px;
+  left: 200px;
 }
 
 .description {
@@ -153,16 +168,31 @@ button {
 .earphones button {
   padding: 10px 30px;
   width: 100px;
+  background-color: rgb(244, 44, 55);
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid rgb(244, 44, 55);
+}
+
+.earphones button a {
+  text-decoration: none;
+  color: white;
+}
+
+.earphones button:hover {
+  background-color: black;
+  border: 1px solid black;
 }
 
 .earphone-image {
   position: absolute;
-  bottom: -10px;
-  left: 20px;
+  bottom: 30px;
+  left: 60px;
 }
 
 .earphone-image img {
-  width: 300px;
+  width: 250px;
 }
 
 .yellow {
@@ -178,8 +208,21 @@ button {
 
 .yellow button {
   background-color: white;
-  color: rgb(254, 198, 46);
   border: 1px solid white;
+}
+
+.yellow button a {
+  text-decoration: none;
+  color: rgb(254, 198, 46);
+}
+
+.yellow button a:hover,
+.blue button a:hover,
+.green button a:hover,
+.red button a:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
 }
 
 .watch {
@@ -206,6 +249,9 @@ button {
 .red button {
   background-color: white;
   border: 1px solid white;
+}
+
+.red button a {
   color: rgb(244, 44, 55);
 }
 
@@ -256,18 +302,21 @@ button {
 
 .green button {
   background-color: white;
-  color: rgb(45, 208, 111);
   border: 1px solid white;
+}
+
+.green button a {
+  color: rgb(45, 208, 111);
 }
 
 .virtual {
   position: absolute;
-  left: 0px;
-  bottom: -5px;
+  left: 60px;
+  bottom: -3px;
 }
 
 .virtual img {
-  width: 300px;
+  width: 230px;
 }
 
 .blue {
@@ -285,8 +334,11 @@ button {
 
 .blue button {
   background-color: white;
-  color: rgb(21, 123, 255);
   border: 1px solid white;
+}
+
+.blue button a {
+  color: rgb(21, 123, 255);
 }
 
 .speaker {
@@ -375,15 +427,22 @@ button {
 
 .summer-sale button {
   background-color: white;
-  color: rgb(244, 44, 55);
+  border: 1px solid white;
   width: 100px;
+  border-radius: 50px;
+  padding: 10px;
   margin-top: 20px;
+}
+
+.summer-sale button a {
+  color: rgb(244, 44, 55);
+  text-decoration: none;
 }
 
 .summer-sale img {
   position: absolute;
-  top: -170px;
-  left: 0px;
+  top: -120px;
+  left: 0;
   width: 1000px;
 }
 
@@ -477,8 +536,17 @@ button {
 }
 
 .happy button {
-  color: rgb(45, 208, 111);
   border: 1px solid white;
+  background-color: white;
+  width: 100px;
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.happy button a {
+  color: rgb(45, 208, 111);
+  text-decoration: none;
 }
 
 .happy img {
@@ -533,13 +601,12 @@ button {
   opacity: 0.4;
 }
 
-.sponsors:hover {
-  color: red;
-  cursor: pointer;
-}
-
 .sponsors img {
   width: 70px;
+}
+
+.sponsors img:hover {
+  color: black;
 }
 
 .access {
@@ -556,11 +623,17 @@ button {
 .phlox {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
 }
 
 .phlox img {
   width: 100px;
+}
+
+.phlox-icons {
+  display: flex;
+  gap: 20px;
+  color: black;
 }
 
 .quick-links,
@@ -587,19 +660,35 @@ button {
   color: black;
 }
 
+.quick-links a:hover {
+  color: rgb(244, 44, 55);
+}
+
 .subscribe h4 {
   font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.access-email input {
+  padding: 10px;
+}
+
+.access-email input:nth-of-type(2) {
+  background-color: rgb(244, 44, 55);
+  padding: 10px 20px 10px 20px;
+  color: white;
+  border-radius: 20px;
 }
 
 .footer {
   background-color: black;
-  color: rgb(171, 171, 171);
+  color: rgb(120, 122, 128);
   display: flex;
   justify-content: space-between;
   padding: 30px;
   font-family: "Montserrat", sans-serif;
   margin-top: 20px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .shop-header {
@@ -646,7 +735,7 @@ button {
 .search-container {
   display: flex;
   border: 1px solid rgb(226, 226, 226);
-  padding: 7px;
+  padding: 10px;
   border-radius: 50px;
   color: rgb(142, 143, 143);
   background-color: rgb(226, 226, 226);
@@ -679,6 +768,18 @@ button {
   gap: 30px;
   margin: 10px 10px 10px 0px;
   font-size: 11px;
+}
+
+.shop-prices input {
+  color: red;
+  display: flex;
+  flex: 1;
+}
+
+.shop-prices .prices {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
 
 .shop-products-results {
@@ -754,6 +855,10 @@ select {
 .about-container button {
   width: 25%;
   padding: 10px;
+  background-color: rgb(244, 44, 55);
+  color: white;
+  border: 1px solid rgb(244, 44, 55);
+  border-radius: 20px;
 }
 
 .about-container button:hover {
@@ -831,7 +936,37 @@ form {
     gap: 250px;
   }
 
-  ul.info li:not(.info-logo) {
+  .info li:not(.info-logo) {
+    display: block;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    color: rgb(142, 143, 143);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: white;
+    transition: display 0.3s ease-in-out;
+  }
+
+  #toggler:checked ~ .nav-container .info li:not(.info-logo) {
+    display: block;
+  }
+
+  .account .fa-bars-staggered {
+    display: block;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    color: rgb(142, 143, 143);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  #toggler {
     display: none;
   }
 
@@ -856,8 +991,8 @@ form {
 
   .headphone-image {
     position: absolute;
-    top: 120px;
-    left: 70px;
+    top: 10px;
+    left: -80px;
   }
 
   .headphone-image img {
@@ -914,7 +1049,7 @@ form {
 
   .laptop {
     position: absolute;
-    left: 70px;
+    left: 80px;
     top: 60px;
   }
 
@@ -978,6 +1113,9 @@ form {
 
   .summer-sale img {
     width: 300px;
+    position: absolute;
+    top: -90px;
+    left: 120px;
   }
 
   .summer-sale h3 {
@@ -1014,6 +1152,58 @@ form {
 
   .sponsors img {
     width: 100px;
+  }
+
+  .access {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shop-categories {
+    padding: 10px 0px 0px 40px;
+    display: flex;
+    gap: 100px;
+    flex-direction: column-reverse;
+  }
+
+  .shop-products-results {
+    display: flex;
+    gap: 150px;
+    font-size: 15px;
+  }
+
+  select {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    height: 40px;
+    font-weight: bold;
+    width: 190px;
+  }
+
+  .shop-products-view .best-products-images {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 
   .about-container {
