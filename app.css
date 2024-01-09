@@ -477,6 +477,8 @@ button:hover {
 
 .products {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .products-sale {
@@ -809,7 +811,7 @@ select {
   display: flex;
   gap: 30px;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex: 1;
 }
 
@@ -821,6 +823,40 @@ select {
   display: flex;
   justify-content: center;
   width: 255px;
+}
+
+.products-price .elite:first-child {
+  color: rgb(171, 171, 171);
+  text-decoration: line-through;
+  margin-right: 10px;
+  font-weight: lighter;
+  opacity: 0.5;
+}
+
+.products-price:hover {
+  color: black;
+}
+
+.products-price {
+  position: relative;
+}
+
+.products .cart {
+  background-color: rgb(244, 44, 55);
+  color: white;
+  border: 1px solid rgb(244, 44, 55);
+  border-radius: 20px;
+  padding: 15px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.products-price:hover + .cart {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .about-container {
@@ -1200,10 +1236,7 @@ form {
   .shop-products-view .best-products-images {
     display: flex;
     gap: 30px;
-    align-items: center;
     flex-wrap: wrap;
-    flex: 0 0 50%;
-    max-width: 50%;
   }
 
   .about-container {
