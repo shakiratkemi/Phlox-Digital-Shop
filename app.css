@@ -11,8 +11,9 @@ body {
 
 .nav-container {
   display: flex;
-  gap: 400px;
+  justify-content: space-between;
   padding: 40px 0px 20px 40px;
+  margin-right: 20px;
 }
 
 nav ul {
@@ -41,11 +42,7 @@ nav ul {
   gap: 20px;
 }
 
-.account #toggler {
-  display: none;
-}
-
-.account .fa-bars-staggered {
+#toggler {
   display: none;
 }
 
@@ -265,25 +262,36 @@ button:hover {
   width: 530px;
 }
 
-.gray {
-  color: black;
-  background-color: rgb(237, 237, 238);
-  border: 1px solid rgb(237, 237, 238);
+.blue {
+  background-color: rgb(21, 123, 255);
+  border: 1px solid rgb(21, 123, 255);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex: 3;
+  flex: 1;
 }
 
-.gray h5 {
-  color: white;
-  font-size: 47px;
+.blue h5 {
+  color: rgb(58, 152, 255);
 }
 
-.console {
+.blue button {
+  background-color: white;
+  border: 1px solid white;
+}
+
+.blue button a {
+  color: rgb(21, 123, 255);
+}
+
+.speaker {
   position: absolute;
-  bottom: -40px;
-  left: 350px;
+  bottom: -27px;
+  left: 70px;
+}
+
+.speaker img {
+  width: 250px;
 }
 
 .green {
@@ -319,36 +327,25 @@ button:hover {
   width: 230px;
 }
 
-.blue {
-  background-color: rgb(21, 123, 255);
-  border: 1px solid rgb(21, 123, 255);
+.gray {
+  color: black;
+  background-color: rgb(237, 237, 238);
+  border: 1px solid rgb(237, 237, 238);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex: 1;
+  flex: 3;
 }
 
-.blue h5 {
-  color: rgb(58, 152, 255);
+.gray h5 {
+  color: white;
+  font-size: 47px;
 }
 
-.blue button {
-  background-color: white;
-  border: 1px solid white;
-}
-
-.blue button a {
-  color: rgb(21, 123, 255);
-}
-
-.speaker {
+.console {
   position: absolute;
-  bottom: -27px;
-  left: 70px;
-}
-
-.speaker img {
-  width: 250px;
+  bottom: -40px;
+  left: 350px;
 }
 
 .benefits {
@@ -387,10 +384,10 @@ button:hover {
   background-color: rgb(244, 44, 55);
   border-radius: 20px;
   color: rgb(222, 218, 218);
-  margin: 200px 0px 200px 40px;
+  margin: 200px 20px 200px 40px;
   padding: 130px 250px;
   display: flex;
-  gap: 200px;
+  gap: 260px;
   height: 450px;
   flex: 1;
   position: relative;
@@ -399,6 +396,7 @@ button:hover {
 
 .off {
   line-height: 1.5;
+  align-items: center;
 }
 
 .off p {
@@ -418,7 +416,9 @@ button:hover {
 }
 
 .sale h3 {
-  font-size: 30px;
+  font-size: 45px;
+  white-space: nowrap;
+  font-weight: bolder;
 }
 
 .sale p {
@@ -434,9 +434,18 @@ button:hover {
   margin-top: 20px;
 }
 
+.summer-sale button:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
 .summer-sale button a {
   color: rgb(244, 44, 55);
   text-decoration: none;
+}
+
+.summer-sale button a:hover {
+  color: white;
 }
 
 .summer-sale img {
@@ -479,6 +488,7 @@ button:hover {
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .products-sale {
@@ -529,14 +539,6 @@ button:hover {
   margin-left: 40px;
 }
 
-.happy h1 {
-  font-size: 80px;
-}
-
-.happy h3 {
-  font-size: 25px;
-}
-
 .happy button {
   border: 1px solid white;
   background-color: white;
@@ -546,9 +548,18 @@ button:hover {
   margin-top: 20px;
 }
 
+.happy button:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
 .happy button a {
   color: rgb(45, 208, 111);
   text-decoration: none;
+}
+
+.happy button a:hover {
+  color: white;
 }
 
 .happy img {
@@ -600,15 +611,17 @@ button:hover {
   background-color: rgb(226, 226, 226);
   padding: 80px;
   margin: 70px 0px 70px 0px;
-  opacity: 0.4;
 }
 
 .sponsors img {
   width: 70px;
+  opacity: 0.4;
+  transition: 1s;
 }
 
 .sponsors img:hover {
-  color: black;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .access {
@@ -693,6 +706,39 @@ button:hover {
   font-weight: 600;
 }
 
+/* section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+
+section.show-animate {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+/* section {
+  transition: 2s;
+}
+
+section.headphones-container {
+  transform: translateY(-50px);
+}
+
+section.headphones-container.show-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section.gadget1 {
+  transform: translatex(100%);
+}
+
+section.gadget1.show-animate {
+  transform: translateX(0);
+} */
+
 .shop-header {
   background-color: rgb(226, 226, 226);
   color: rgb(142, 143, 143);
@@ -767,6 +813,7 @@ button:hover {
 .shop-prices {
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 30px;
   margin: 10px 10px 10px 0px;
   font-size: 11px;
@@ -844,21 +891,18 @@ select {
 }
 
 .products .cart {
-  display: none;
   background-color: rgb(244, 44, 55);
   color: white;
   border: 1px solid rgb(244, 44, 55);
   border-radius: 20px;
   padding: 15px;
   font-family: "Montserrat", sans-serif;
-  transition: opacity 0.3s ease-in-out;
+  transition: 0.5s;
   transform: translateX(-100%);
 }
 
 .products-price:hover .cart {
-  display: block;
   transform: translateX(0);
-  opacity: 1;
 }
 
 .about-container {
@@ -968,10 +1012,11 @@ form {
   font-size: 29px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .nav-container {
     display: flex;
-    gap: 250px;
+    justify-content: space-between;
+    margin-right: 10px;
   }
 
   .info li:not(.info-logo) {
@@ -987,25 +1032,17 @@ form {
     transition: display 0.3s ease-in-out;
   }
 
-  #toggler:checked ~ .nav-container .info li:not(.info-logo) {
-    display: block;
+  .info-show {
+    display: none;
   }
 
-  .account .fa-bars-staggered {
+  .info-show.active {
     display: block;
-    margin: 1.5rem;
-    padding: 1.5rem;
-    color: rgb(142, 143, 143);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    background-color: white;
-    cursor: pointer;
   }
 
   #toggler {
-    display: none;
+    display: block;
+    margin-right: 15px;
   }
 
   .headphones {
@@ -1146,7 +1183,9 @@ form {
   }
 
   .summer-sale h1 {
-    font-size: 45px;
+    font-size: 35px;
+    white-space: nowrap;
+    font-weight: bolder;
   }
 
   .summer-sale img {
@@ -1158,12 +1197,26 @@ form {
 
   .summer-sale h3 {
     font-size: 30px;
+    white-space: nowrap;
   }
 
   .off {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+  }
+
+  .sale {
+    align-items: center;
+  }
+
+  .sale p {
+    white-space: nowrap;
+  }
+
+  .best-products-header {
+    padding: 20px;
+    text-align: center;
   }
 
   .best-products-images {
@@ -1266,5 +1319,184 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .headphones-container {
+    padding: 14% 5%;
+  }
+
+  .headphones {
+    padding: 20px;
+    position: relative;
+  }
+
+  .headphones h6 {
+    font-size: 14px;
+  }
+
+  .headphones h4 {
+    font-size: 31px;
+  }
+
+  .headphones h1 {
+    font-size: 40px;
+  }
+
+  .headphone-image img {
+    width: 330px;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+  }
+
+  .gadget1,
+  .gadget2 {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .earphones {
+    color: white;
+    line-height: 1.3;
+    padding: 40px;
+    position: relative;
+    height: 320px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+  }
+
+  .earphones p {
+    font-size: 14px;
+  }
+
+  .earphones h4 {
+    font-size: 30px;
+  }
+
+  .earphones h5 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+
+  .earphone-image {
+    position: absolute;
+    bottom: 0px;
+    left: 160px;
+  }
+
+  .earphone-image img {
+    width: 230px;
+  }
+
+  .watch {
+    position: absolute;
+    top: -10px;
+    left: 80px;
+  }
+
+  .watch img {
+    width: 300px;
+  }
+
+  .laptop {
+    position: absolute;
+    left: 70px;
+    top: 30px;
+  }
+
+  .laptop img {
+    width: 330px;
+  }
+
+  .speaker {
+    position: absolute;
+    bottom: -28px;
+    left: 140px;
+  }
+
+  .speaker img {
+    width: 280px;
+  }
+
+  .virtual {
+    position: absolute;
+    left: 140px;
+    bottom: -3px;
+  }
+
+  .virtual img {
+    width: 250px;
+  }
+
+  .console {
+    position: absolute;
+    bottom: -40px;
+    left: 160px;
+  }
+
+  .benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .free {
+    flex: 0 1 150px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .free-text {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+
+  .summer-sale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 470px;
+    padding: 20px;
+    flex: 1;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .summer-sale img {
+    width: 300px;
+    position: absolute;
+    top: -90px;
+    left: 0px;
+  }
+
+  .sale p {
+    white-space: wrap;
+    text-align: center;
+  }
+
+  .best-products-header {
+    padding: 20px;
+  }
+
+  .news-details img {
+    width: 340px;
+  }
+
+  .news {
+    padding: 20px;
   }
 }
