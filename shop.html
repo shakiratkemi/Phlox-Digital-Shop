@@ -18,26 +18,40 @@
   </head>
   <body>
     <nav class="nav-container">
-      <ul class="info">
-        <li class="info-logo">
-          <a href="./app.html" title="Home">
-            <img src="./images/phlox.png" alt="phlox img" />
-          </a>
-        </li>
-        <li><a href="./app.html">Home</a></li>
-        <li><a href="./shop.html">Shop</a></li>
-        <li><a href="./about.html">About Us</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-      </ul>
-      <div class="account">
-        <ul>
-          <li>login</li>
-          <li><i class="fa-solid fa-magnifying-glass"></i></li>
-          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        <ul class="info">
+          <li class="info-logo">
+            <a href="./app.html" title="Home">
+              <img src="./images/phlox.png" alt="phlox img" />
+            </a>
+          </li>
+          <li class="info-show"><a href="./app.html">Home</a></li>
+          <li class="info-show"><a href="./shop.html" >Shop</a></li>
+          <li class="info-show"><a href="./about.html" >About Us</a></li>
+          <li class="info-show"><a href="./blog.html" >Blog</a></li>
+          <li class="info-show"><a href="./contact.html">Contact Us</a></li>
         </ul>
-      </div>
-    </nav>
+        <div class="account">
+          <ul>
+            <li>login</li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+           <li onClick=showSidebar()><i class="fa-solid fa-bars-staggered" id="toggler"></i></li>
+          </ul>
+
+
+               <div class="info-sidebar">
+                <ul>
+                  <li onClick="hideSidebar()"><i class="fa-solid fa-xmark"></i></li>
+                   <li ><a href="./app.html">Home</a></li>
+          <li ><a href="./shop.html" >Shop</a></li>
+          <li><a href="./about.html" >About Us</a></li>
+          <li ><a href="./blog.html" >Blog</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+      
+                </ul>
+               </div>
+        </div>
+      </nav>
 
     <section class="shop-header">
       <div class="shop-home">
@@ -54,28 +68,38 @@
           <input type="text" placeholder="Search Here" name="" id="" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
+        
+      
 
         <div class="shop-products">
+           <div>
           <h2>Product Categories</h2>
           <i class="fa-solid fa-chevron-down"></i>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+          </div>
+          <ul>
+          <li><a href="./earphone.html">Earphone</a></li>
+          <li><a href="./gadgets.html">Gadgets</a></li>
+          <li><a href="./gaming.html">Gaming</a></li>
+          <li><a href="./headphone.html">Headphone</a></li>
+          <li><a href="./laptop.html">Laptop</a></li>
+          <li><a href="./speaker.html">Speaker</a></li>
+          <li><a href="./uncategorised.html">Uncategorized</a></li>
+          </ul>
      </div>
+     
 
         <hr />
+
         <div class="shop-prices">
+          <div>
           <h2>Choose Price</h2>
           <i class="fa-solid fa-chevron-down"></i>
             </div>
+            </div>
        <input type="range" name="pricing" id="pricing" min="$490" max="$9,950">
-       <div class="price">$490
-        <span>$9,950</span> </div>
       </div>
+    
+    
 
       <section class="shop-products-view">
         <div class="shop-products-results">

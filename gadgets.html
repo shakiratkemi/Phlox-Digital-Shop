@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phlox Digital Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cookie&family=Dancing+Script&family=Josefin+Sans:wght@100;200;300;400&family=Laila&family=Montserrat&family=Outfit:wght@300;400;500&family=Oxygen&family=Oxygen+Mono&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&family=Red+Hat+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0e0646af9d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+ <nav class="nav-container">
+        <ul class="info">
+          <li class="info-logo">
+            <a href="./app.html" title="Home">
+              <img src="./images/phlox.png" alt="phlox img" />
+            </a>
+          </li>
+          <li class="info-show"><a href="./app.html">Home</a></li>
+          <li class="info-show"><a href="./shop.html" >Shop</a></li>
+          <li class="info-show"><a href="./about.html" >About Us</a></li>
+          <li class="info-show"><a href="./blog.html" >Blog</a></li>
+          <li class="info-show"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="account">
+          <ul>
+            <li>login</li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+           <li onClick=showSidebar()><i class="fa-solid fa-bars-staggered" id="toggler"></i></li>
+          </ul>
+
+
+               <div class="info-sidebar">
+                <ul>
+                  <li onClick="hideSidebar()"><i class="fa-solid fa-xmark"></i></li>
+                   <li ><a href="./app.html">Home</a></li>
+          <li ><a href="./shop.html" >Shop</a></li>
+          <li><a href="./about.html" >About Us</a></li>
+          <li ><a href="./blog.html" >Blog</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+      
+                </ul>
+               </div>
+        </div>
+      </nav>
+
+    <section class="shop-header">
+      <div class="shop-home">
+        <a href="./app.html">Home</a>
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <a href="./shop.html">Products</a>
+         <span><i class="fa-solid fa-chevron-right"></i></span>
+         Gadgets
+      </div>
+      <h2>Gadgets</h2>
+    </section>
+
+    <section class="shop-categories">
+      <div class="shop-filter">
+        <div class="search-container">
+          <input type="text" placeholder="Search Here" name="" id="" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="shop-products">
+          <div>
+          <h2>Product Categories</h2>
+          <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul>
+          <li><a href="./earphone.html">Earphone</a></li>
+          <li><a href="./gadgets.html">Gadgets</a></li>
+          <li><a href="./gaming.html">Gaming</a></li>
+          <li><a href="./headphone.html">Headphone</a></li>
+          <li><a href="./laptop.html">Laptop</a></li>
+          <li><a href="./speaker.html">Speaker</a></li>
+          <li><a href="./uncategorised.html">Uncategorized</a></li>
+          </ul>
+     </div>
+
+        <hr />
+        <div class="shop-prices">
+          <h2>Choose Price</h2>
+          <i class="fa-solid fa-chevron-down"></i>
+            </div>
+       <input type="range" name="pricing" id="pricing" min="$490" max="$9,950">
+       <div class="price">$490
+        <span>$9,950</span> </div>
+      </div>
+
+      <section class="shop-products-view">
+        <div class="shop-products-results">
+          <div class="shop-products-results-header">
+            <h2>Gadgets</h2>
+            <p>Showing all 3 results</p>
+          </div>
+
+          <select name="category" id="category">
+            <option value="popularity">Sort by popularity</option>
+            <option value="rating">Sort by average rating</option>
+            <option value="price">Sort by price</option>
+            <option value="low">Sort by price:low to high</option>
+            <option value="high">Sort by price:high to low</option>
+          </select>
+        </div>
+
+        <div class="best-products-images">
+          <div class="products">
+            <img src="./images/beats.jpg" alt="beats img" width="300" />
+            <div class="products-text">Beats</div>
+          <div class="products-price">
+           <button class="cart">Add to Cart</button>
+           $995
+           </div>
+          </div>
+
+         <div class="products">
+            <img
+              src="./images/smartwatch.jpg"
+              alt="smartwatch img"
+              width="300"
+            />
+            <div class="products-text">Smartwatch 20 LTE Wifi</div>
+            <div class="products-price">
+               <button class="cart">Add to Cart</button>
+              $499
+            </div>
+          </div>
+
+
+
+          <div class="products">
+            <img src="./images/beats2.jpg" alt="beats img" width="300" />
+            <div class="products-text">Beats</div>
+            <div class="products-price">
+               <button class="cart">Add to Cart</button>
+              <span class="elite">$11,950</span> $9,950</div>
+           <div class="products-sale">Sale!</div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="sponsors">
+      <img src="./images/golden.png" alt="golden img" />
+      <img src="./images/sweety.png" alt="sweety img" />
+      <img src="./images/fastlane.png" alt="fastlane img" />
+      <img src="./images/mighty.png" alt="mighty img" />
+      <img src="./images/jack.png" alt="jack img" />
+    </section>
+
+    <section class="access">
+      <div class="phlox">
+        <img src="./images/phlox.png" alt="phlox img" />
+        <p>
+          There are many variations <br />passages of Lorem ipsum
+          <br />available, but the majority have
+        </p>
+
+        <div class="phlox-icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+
+      <div class="quick-links">
+        <div>Quick Links</div>
+        <ul>
+          <li><a href="./app.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <div>Contact</div>
+        <ul>
+          <li>+99 (0) 101 0000 888 Patricia</li>
+          <li>C.Amedee 4401 Waldeck</li>
+          <li>Street Grapevine Nashville, Tx</li>
+          <li>76051</li>
+        </ul>
+      </div>
+
+      <div class="subscribe">
+        <div>Subscribe To Our Email</div>
+        <h4>For Latest News & Updates</h4>
+
+
+        <div class="shop-filter access-email">
+        <div class="search-container">
+          <input type="text" placeholder="Enter Your Email" name="" id="" />
+         <input type="submit" value="Subscribe" />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div>© 2023 Phlox Digital Shop. All rights reserved.</div>
+      <div>Privacy Policy . Term Condition</div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
