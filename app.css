@@ -699,6 +699,7 @@ button:hover {
 
 .quick-links a:hover {
   color: rgb(244, 44, 55);
+  font-weight: bold;
 }
 
 .subscribe h4 {
@@ -864,6 +865,7 @@ section.gadget1.show-animate {
 
 .shop-products li a:hover {
   color: rgb(244, 44, 55);
+  font-weight: bold;
 }
 
 .shop-prices input {
@@ -950,6 +952,29 @@ select {
   transform: translateX(0);
 }
 
+.shop-pages {
+  display: flex;
+  gap: 20px;
+}
+
+.one,
+.two {
+  background-color: rgb(244, 44, 55);
+  color: white;
+  padding: 7px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-right,
+.arrow-left {
+  color: rgb(142, 143, 143);
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .about-container {
   display: flex;
   padding: 40px;
@@ -1001,6 +1026,7 @@ select {
 
 .blog-news .news-details {
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 form {
@@ -1055,6 +1081,76 @@ form {
 .contact-details .fa-solid {
   color: rgb(244, 44, 55);
   font-size: 29px;
+}
+
+.perfect img {
+  width: 1200px;
+}
+
+#perfect-date {
+  color: rgb(244, 44, 55);
+  font-weight: bold;
+}
+
+.perfect p {
+  color: black;
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 200px 0px 200px;
+}
+
+.perfect-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex: 0 0 300px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 200px 0px 200px;
+}
+
+.comment p {
+  color: rgb(120, 122, 128);
+}
+
+.comment-description {
+  display: flex;
+  gap: 20px;
+}
+
+#comment-email,
+#comment-website {
+  outline: none;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 30px;
+  padding: 15px;
+  width: 250px;
+  background-color: rgb(220, 220, 220);
+}
+
+#comment-email:active,
+#comment-website:active,
+#comments:active {
+  font-weight: bold;
+  color: black;
+}
+
+#comments {
+  outline: none;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 30px;
+  background-color: rgb(220, 220, 220);
+  padding: 20px;
 }
 
 @media screen and (max-width: 700px) {
